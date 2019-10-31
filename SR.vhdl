@@ -22,6 +22,9 @@ architecture bhv of SR is
       elsif(s = '1' and r = '1') then
         q <= 'Z';
         qb <= 'Z';
+      elsif(s = '0' and r = '0') then
+        q <= '0';
+        qb <= '0;
       end if;
     end if;
   end process;
